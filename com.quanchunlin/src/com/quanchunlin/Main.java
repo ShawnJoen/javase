@@ -26,6 +26,7 @@ public class Main {
 		/*
 		 * 内部类的 基本操作
 		 * */
+		/*
 		new OuterClass().fun1(); //内部类 InnerClass1的属性
 		OuterClass.InnerClass1 inner1 = new OuterClass().new InnerClass1();
 		inner1.print(); //外部类属性
@@ -38,6 +39,15 @@ public class Main {
 		//OuterClass.InnerClass3 inner3 = new OuterClass().new InnerClass3(); //因为是 private所以在外部无法实例化
 
 		new OuterClass().fun4(); //fun4的属性
-
+		*/
+		/*
+		 * 断言
+		 * Run > Run Confi.. > Arguments 添加 -ea 执行时 开启断言，如不填 默认无视 断言
+		 * */
+		int num = 10;
+		assert num == 20 : "不是20";
+		System.out.println(num); //认时 输出 Exception in thread "main" java.lang.AssertionError: 不是20
+		
+		
 	}
 }
