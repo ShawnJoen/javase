@@ -44,10 +44,20 @@ public class Main {
 		 * 断言
 		 * Run > Run Confi.. > Arguments 添加 -ea 执行时 开启断言，如不填 默认无视 断言
 		 * */
+		/*
 		int num = 10;
 		assert num == 20 : "不是20";
-		System.out.println(num); //认时 输出 Exception in thread "main" java.lang.AssertionError: 不是20
-		
+		System.out.println(num); //开启断言时 输出 Exception in thread "main" java.lang.AssertionError: 不是20
+		*/
+		/*
+		 * 单例设计， 多例设计
+		 * */
+		/*
+		Singleton.getInstance().print(); //输出 单例设计 print
+		MultiplePatterns.getColor(1).print(); //蓝色
+		MultiplePatterns.getColor(2).print(); //绿色
+		MultiplePatterns.getColor(3).print(); //红色
+		*/
 		
 	}
 }
