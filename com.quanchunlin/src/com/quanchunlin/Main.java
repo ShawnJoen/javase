@@ -1,6 +1,11 @@
 package com.quanchunlin;
 
 import com.quanchunlin.OuterClass.InnerClass2;
+import com.quanchunlin.binarytree.Binary;
+import com.quanchunlin.book.Book;
+import com.quanchunlin.book.BookShop;
+import com.quanchunlin.book.ComputerBook;
+import com.quanchunlin.link.Link;
 
 public class Main {
 
@@ -58,6 +63,46 @@ public class Main {
 		MultiplePatterns.getColor(2).print(); //绿色
 		MultiplePatterns.getColor(3).print(); //红色
 		*/
+		/*
+		 * 链表实现
+		 * */
+		/*BookShop shop = new BookShop();
+		shop.add(new ComputerBook("kotlin","张三"));
+		shop.add(new ComputerBook("android","龙贺"));
+		shop.add(new ComputerBook("php","朱颖"));
+		shop.add(new ComputerBook("php","李辉"));
+		shop.delete(new ComputerBook("android","龙贺"));
+		
+		Book book = (Book)shop.get(1);
+		System.out.println(book.getTitle());
+		
+		shop.addAll();
+		
+		Link shopData = shop.search("php");
+		if(shopData == null) {
+			
+			System.out.println("无此书");
+		}else {
+			
+			Object books[] = shopData.toArray();
+			for (int i = 0 ; i < books.length ; i++) {
+				
+				System.out.println(books[i]);
+			}
+		}*/
+		/*
+		 * 二叉树
+		 * */
+		/*Binary binary = new Binary();
+		binary.add("4");
+		binary.add("2");	
+		binary.add("1");
+		binary.add("3");
+		binary.add("5");
+		binary.add("6");
+		binary.print();*/
+		
+		
 		
 	}
 }
