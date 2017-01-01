@@ -6,6 +6,9 @@ import com.quanchunlin.book.Book;
 import com.quanchunlin.book.BookShop;
 import com.quanchunlin.book.ComputerBook;
 import com.quanchunlin.link.Link;
+import com.quanchunlin.thread.Customer;
+import com.quanchunlin.thread.Info;
+import com.quanchunlin.thread.Product;
 
 public class Main {
 
@@ -101,7 +104,14 @@ public class Main {
 		binary.add("5");
 		binary.add("6");
 		binary.print();*/
-		
+		/*
+		 * 生产者 和 消费者
+		 * */
+		/*
+		Info info = new Info();
+		new Thread(new Product(info)).start();
+		new Thread(new Customer(info)).start();
+		*/
 		
 		
 	}
